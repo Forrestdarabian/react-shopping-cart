@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { ShoppingCart, removeItem } from './ShoppingCart';
 // function removeItem(){
 // 	document.getElementById(button).remove;
 // }
@@ -15,7 +15,7 @@ const Item = props => {
 				
 				<h1>{props.title}</h1>
 				<p>$ {props.price}</p>
-				<button onClick='removeItem()'>Remove from cart</button>
+				<button onClick={props.removeItem} >Remove from cart</button>
 			</div>
 		</div>
 	);
